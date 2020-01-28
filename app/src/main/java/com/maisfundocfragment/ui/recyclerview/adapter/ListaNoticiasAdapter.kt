@@ -15,15 +15,9 @@ class ListaNoticiasAdapter(
     var quandoItemClicado: (noticia: Noticia) -> Unit = {}
 ) : RecyclerView.Adapter<ListaNoticiasAdapter.ViewHolder>() {
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val viewCriada = LayoutInflater.from(context)
-            .inflate(
-                R.layout.item_noticia,
-                parent, false
-            )
+            .inflate(R.layout.item_noticia, parent, false)
         return ViewHolder(viewCriada)
     }
 
